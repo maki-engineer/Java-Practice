@@ -30,7 +30,7 @@ public class Hero {
     System.out.println(this.name + "は体力が" + sec + "回復した！");
   }
 
-  public void slip(){
+  public final void slip(){
     this.hp -= 5;
     System.out.println(this.name + "は転んでしまった！");
     System.out.println("5のダメージ！");

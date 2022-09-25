@@ -1,4 +1,4 @@
-public class Main{
+public final class Main{
   public static void main(String args[]){
     Hero h1    = new Hero("まき", "炎の剣");
     Matango m1 = new Matango('A');
