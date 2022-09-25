@@ -1,11 +1,13 @@
 public class Main{
   public static void main(String args[]){
-    Cleric c = new Cleric();
+    Hero h1 = new Hero("まき");
 
-    c.name = "まき";
-    c.mp = 3;
+    Hero h2 = new Hero("ダイチ");
 
-    int result = c.pray(6);
-    System.out.println(result);
+    Hero h3 = new Hero();
+
+    System.out.println(h1.name);
+    System.out.println(h2.name);
+    System.out.println(h3.name);
   }
 }
