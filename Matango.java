@@ -4,6 +4,7 @@ public class Matango {
   char suffix;
 
   public Matango(char suffix){
+    this.hp     = 50;
     this.suffix = suffix;
   }
 

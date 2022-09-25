@@ -1,20 +1,21 @@
 public class Hero {
   String name;
   int hp;
-  Sword sword = new Sword();
+  Sword sword;
 
-  public Hero(String name){
+  public Hero(String name, String sword){
     this.name = name;
     this.hp   = 100;
+    this.sword = new Sword(sword);
   }
 
   public Hero(){
-    this("テスト用キャラクター");
+    this("テスト用キャラクター", "テストの剣");
   }
 
   public void attack(Matango m){
     m.hp -= this.sword.damage;
-    System.out.println(this.name + "は" + this.sword.name + "で攻撃した！");
+    System.out.println(this.name + "はお化けキノコ" + m.suffix + "に" + this.sword.name + "で攻撃した！");
     System.out.println("敵に" + this.sword.damage + "のダメージを与えた！");
   }
 
