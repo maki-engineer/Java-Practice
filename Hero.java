@@ -1,6 +1,4 @@
-public class Hero {
-  String name;
-  int hp;
+public class Hero extends Character {
   Sword sword;
 
   public Hero(String name, String sword){
@@ -16,7 +14,7 @@ public class Hero {
   public void attack(Matango m){
     m.hp -= this.sword.damage;
     System.out.println(this.name + "はお化けキノコ" + m.suffix + "に" + this.sword.name + "で攻撃した！");
-    System.out.println("敵に" + this.sword.damage + "のダメージを与えた！");
+    System.out.println("お化けキノコ" + m.suffix + "に" + this.sword.damage + "のダメージを与えた！");
   }
 
   public void sleep(){
@@ -34,11 +32,5 @@ public class Hero {
     this.hp -= 5;
     System.out.println(this.name + "は転んでしまった！");
     System.out.println("5のダメージ！");
-  }
-
-  public void run(){
-    System.out.println(this.name + "は逃げ出した！");
-    System.out.println("GAME OVER");
-    System.out.println("最終HPは" + this.hp + "でした");
   }
 }
